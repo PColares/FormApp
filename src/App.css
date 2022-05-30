@@ -1,0 +1,73 @@
+body {
+  background: #e5e5e5;
+}
+
+.Container {
+  width: 620px;
+  height: 763px;
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.App-logo {
+  height: 124px;
+  width: 213px;
+  pointer-events: none;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #111111;
+}
+
+.FormLayout {
+  display: flex;
+  flex-direction: column;
+
+  color: #767676;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.Footer {
+  display: flex;
+  flex-direction: row;
+
+  color: black;
+
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.Checkbox {
+  background-color: #0dbdbd;
+}
+
+.RegisterButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 12px;
+  gap: 6px;
+
+  background-color: #0dbdbd;
+  border: none;
+  border-radius: 12px;
+
+  color: white;
+  
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
