@@ -1,0 +1,37 @@
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+.form-input-short {
+  padding-left: 10px;
+  width: 11.25rem;
+}
+
+.form-input-long {
+  padding-left: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.container input {
+  height: 30px;
+  border: 2px solid #aaaaaa;
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .form-input-short {
+    width: 8rem;
+  }
+
+  .form-input-long {
+    width: 17.5rem;
+  }
+}
