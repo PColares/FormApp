@@ -28,5 +28,7 @@
 @media (max-width: 600px) {
   .BackButton {
     margin: 5rem 0;
+    height: 5rem;
+    width: 80%;
   }
 }
