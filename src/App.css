@@ -4,14 +4,15 @@ body {
 
 .Container {
   width: 620px;
-  height: 763px;
   background: #ffffff;
   border-radius: 20px;
+  padding-bottom: 2%;
 }
 
 .App-logo {
   height: 124px;
   width: 213px;
+  margin-top: 4%;
   pointer-events: none;
 }
 
@@ -22,52 +23,22 @@ body {
   color: #111111;
 }
 
-.FormLayout {
+.App-Container {
   display: flex;
-  flex-direction: column;
-
-  color: #767676;
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.Footer {
-  display: flex;
-  flex-direction: row;
-
-  color: black;
-
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-}
-
-.Checkbox {
-  background-color: #0dbdbd;
-}
-
-.RegisterButton {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  padding: 12px 12px;
-  gap: 6px;
+  margin-top: 4%;
+  width: 100%;
+  height: 100%;
+}
 
-  background-color: #0dbdbd;
-  border: none;
-  border-radius: 12px;
+@media (max-width: 600px) {
+  .Container {
+    width: 100vh;
+    height: 100vh;
+    border-radius: 0;
+  }
 
-  color: white;
-  
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
+  .App-Container {
+    margin-top: 0;
+  }
 }
