@@ -1,0 +1,8 @@
+.Checkbox {
+  accent-color: #0dbdbd;
+}
+
+.CheckboxContainer {
+  display: flex;
+  flex-direction: column;
+}
