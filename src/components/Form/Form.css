@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   width: 80%;
-
   color: #767676;
   font-family: 'Nunito';
   font-style: normal;
@@ -34,14 +33,9 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-
+  margin-top: 5rem;
+  margin-bottom: 3rem;
   color: black;
-
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
 }
@@ -56,15 +50,8 @@
 
   background-color: #0dbdbd;
   border: none;
-  border-radius: 12px;
-
+  border-radius: 10px;
   color: white;
-
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
   transition-duration: 0.4s;
 }
 
@@ -91,10 +78,9 @@
     flex-direction: column;
     margin: 1rem 0;
   }
-  
 
   .RegisterButton {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
 }
