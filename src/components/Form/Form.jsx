@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import FormInput from '../FormInput/FormInput'
 import './Form.css'
 import CheckBox from '../Checkbox/Checkbox'
@@ -16,6 +16,16 @@ function Form({ FormState }) {
     const validEmail = /[a-z0-9]+\S+@\S+\.\S+/.test(info.email)
     const validPassword = /^\d{6,9}$/.test(info.password)
     const validPhone = /^\d{11}$/.test(info.phone)
+
+    
+    useEffect(() => {
+        window.localStorage.setItem("USER_INFO", JSON.stringify(info));
+    }, [info])
+    
+    useEffect(() => {
+        const data = window.localStorage.getItem('USER_INFO');
+        setInfo(JSON.parse(data));
+    }, [])
 
     function handleChange(event) {
         const { name, value } = event.target;
