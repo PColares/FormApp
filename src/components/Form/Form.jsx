@@ -17,7 +17,6 @@ function Form({ FormState }) {
     const validPassword = /^\d{6,9}$/.test(info.password)
     const validPhone = /^\d{11}$/.test(info.phone)
 
-    
     useEffect(() => {
         window.localStorage.setItem("USER_INFO", JSON.stringify(info));
     }, [info])
@@ -47,7 +46,6 @@ function Form({ FormState }) {
 
         return hasError || !hasData || !checked
     }
-
 
     return (
         <>
@@ -91,7 +89,6 @@ function Form({ FormState }) {
                                 }
                             }}
                         />
-
                         <FormInput
                             text="Password: * "
                             error={error.password}
@@ -148,6 +145,7 @@ function Form({ FormState }) {
                         />
                     </div>
                 </div>
+
                 <div className="Footer">
                     <CheckBox
                         label="I accept the terms and privacy"
@@ -155,7 +153,6 @@ function Form({ FormState }) {
                         onChange={handleCheck}
                         required
                     />
-
                     <button
                         type="submit"
                         disabled={validateButton()}

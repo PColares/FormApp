@@ -8,7 +8,6 @@ import './App.css'
 function App() {
   const [SucessState, setSucessState] = useState(false);
 
-
   function handleState(SucessState) {
     setSucessState(SucessState)
   }
@@ -18,12 +17,7 @@ function App() {
       <div className="Container">
         <header className="App-header">
           <img src={data} className="App-logo" alt="data icon" />
-          {SucessState ? (
-
-            <Sucess onButtonClick={handleState} />
-
-          ) : <Form FormState={handleState} />}
-
+          {SucessState ? <Sucess onButtonClick={handleState} /> : <Form FormState={handleState} />}
         </header>
       </div>
     </div>
