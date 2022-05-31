@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
-import './App.css'
+import Sucess from './components/Sucess/Sucess'
 import Form from './components/Form/Form'
 import data from './assets/data.png'
 
-function App() {
-  const [SucessState, setSucessState] = useState(true);
+import './App.css'
 
-  const Title = "Intern Sign Up"
+function App() {
+  const [SucessState, setSucessState] = useState(false);
+
 
   function handleState(SucessState) {
     setSucessState(SucessState)
@@ -14,25 +15,15 @@ function App() {
 
   return (
     <div className="App-Container">
-
       <div className="Container">
-
         <header className="App-header">
           <img src={data} className="App-logo" alt="data icon" />
           {SucessState ? (
-            <>
-              <h1>{Title}</h1>
-              <button
-                onClick={() => {
 
-                  setSucessState(false)
+            <Sucess onButtonClick={handleState} />
 
-                }}
-              >
-                Back
-              </button>
-            </>
           ) : <Form FormState={handleState} />}
+
         </header>
       </div>
     </div>
