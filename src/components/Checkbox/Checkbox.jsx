@@ -1,7 +1,7 @@
 import React from 'react'
 import './Checkbox.css'
 
-function CheckBox({label, value, onChange, error}) {
+function CheckBox({ label, value, onChange }) {
 
     return (
         <div className="CheckboxContainer">
@@ -14,7 +14,6 @@ function CheckBox({label, value, onChange, error}) {
                 />
                 {label}
             </label>
-             <span className="error">{error}</span>
         </div>)
 }
 

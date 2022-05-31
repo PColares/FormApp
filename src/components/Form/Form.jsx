@@ -20,7 +20,7 @@ function Form({ FormState }) {
     useEffect(() => {
         window.localStorage.setItem("USER_INFO", JSON.stringify(info));
     }, [info])
-    
+
     useEffect(() => {
         const data = window.localStorage.getItem('USER_INFO');
         setInfo(JSON.parse(data));
