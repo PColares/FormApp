@@ -1,9 +1,9 @@
 # FormApp
 Simple form signUp app with React.
 
-Has 2 screens, SignUp and success. 
+Has 2 screens, SignUp and sucess. 
 
-Behavior: The SignUp screen has a form with validation in it's input fields and when everything is validated the user can click the register button to change to a success screen. All screens should be responsive in mobile.
+Behavior: The SignUp screen has a form with validation in it's input fields and when everything is validated the user can click the register button to change to a sucess screen. All screens should be responsive in mobile.
 
 Rules:
 Media Query main width: 650px
@@ -15,7 +15,7 @@ Validations:
 - Date in Data Picker
 - Phone: 11 digits - no special characters or letters allowed.
 - Checkbox: Terms must be accepted.
-The success page can only be accessed if all the fields within the parameters
+The sucess page can only be accessed if all the fields within the parameters
 
 
 Desktop:
